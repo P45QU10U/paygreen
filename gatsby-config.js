@@ -8,8 +8,8 @@ require('dotenv').config()
 // const linkResolver = require('./example-route-to-linkResolver')
 
 module.exports = {
- plugins: [
- {
+  plugins: [
+    {
       resolve: 'gatsby-source-prismic',
       options: {
         repositoryName: 'paygreen',
@@ -21,7 +21,7 @@ module.exports = {
           type,
           element,
           content,
-          children,
+          children
         ) => {},
         schemas: {
           post: require('./src/schemas/blogpost.json'),
@@ -42,5 +42,6 @@ module.exports = {
         },
       },
     },
-  ] 
+    `gatsby-plugin-styled-components`,
+  ],
 }
