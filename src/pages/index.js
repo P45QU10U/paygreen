@@ -1,14 +1,13 @@
 import React from 'react'
-import { Card, Text, Title } from '@paygreen/paygreen-ui'
+import { Link } from 'gatsby'
+import { Dot, Card, Text, Title } from '@paygreen/paygreen-ui'
 
 export default function Home() {
   return (
     <div>
+      <Title align="center">Transformez le paiement sur votre plateforme</Title>
       <Card>
-        <Title align="center">
-          Hello <strong>World</strong>!
-        </Title>
-
+        <Link to="/tarifs">Tarifs</Link>
         <Text>
           A simple example of use for the component <strong>Card</strong>.
         </Text>
